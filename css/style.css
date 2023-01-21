@@ -111,6 +111,11 @@ body {
     bottom: 50px;
 }
 
+.video-contenedor {
+    border-radius: 15px;
+    background-color: #cac5c0;
+}
+
 /* Personalizados */
 /* button {
     width: 80%;

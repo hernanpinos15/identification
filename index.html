@@ -28,7 +28,7 @@
         <div class="card-body">
             <h1>Verificación de Identidad</h1>
 
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 w-75">
                 <div class="form-floating">
                     <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Cédula">
                     <label for="floatingInputGroup1">Cédula</label>
@@ -38,7 +38,7 @@
                 </span>
             </div>
 
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 w-75">
                 <div class="form-floating">
                     <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Código Dactilar">
                     <label for="floatingInputGroup1">Código Dactilar</label>
@@ -47,8 +47,13 @@
                     <i class="fa fa-user"></i>
                 </span>
             </div>
-
-            <button type="button" class="btn btn-success w-100 p-3">Ingresar</button>
+            
+            <button type="button" class="btn btn-success w-50 p-3">Ingresar</button>
+            <br /><br />
+            <div id="photo-btn">
+                <i class="fa fa-camera"></i>
+                Camara
+            </div>
         </div>
         <div class="h-100 d-inline-block"></div>
         <div class="h-100 d-inline-block"></div>
@@ -62,17 +67,20 @@
 
     <br /><br />
     <!-- Modal -->
-    <div class="card h-auto d-inline-block w-100 p-3">
+    <div class="card h-auto d-inline-block w-100 p-3" align="center">
         
-        <div id="photo-btn" class="fab-photo">
-            <i class="fa fa-camera"></i>
-        </div>
+        <h1>Verificación de Identidad</h1>
+        <h2>Asegúrese de estar en un lugar iluminado</h2>
+        <h2>Centre su rostro dentro de círculo</h2>
 
         <div class="camara-contenedor fadeIn fast" align="center">
-                
-            <video id="player" autoplay style="height: 400px; width: 400px;"></video>
+            
+            <div class="video-contenedor">
+                <video id="player" autoplay style="height: 400px; width: 400px; border-radius: 15px;"></video>
+            </div>
+            <br />
 
-            <button id="tomar-foto-btn" type="button" class="btn btn-success w-100 p-3">
+            <button id="tomar-foto-btn" type="button" class="btn btn-success w-50 p-3">
                 <i class="fa fa-camera"></i>
                 Tomar Foto
             </button>
@@ -87,6 +95,28 @@
 
     </div>
     <!-- Fin Modal -->
+
+    <br />
+    <br />
+
+    <div class="card h-auto d-inline-block w-100 p-3" align="center">
+        <div class="card-body">
+            <i class="fa fa-check-circle fa-4x"></i>
+            
+            <h1>Gracias</h1>
+
+            <p> Su Identidad ha sido verificada correctamente, continúe con el proceso en el chat</p>
+            
+            
+            <button type="button" class="btn btn-success w-50 p-3">Continuar</button>
+        </div>
+        <div class="h-100 d-inline-block"></div>
+        <div class="h-100 d-inline-block"></div>
+        <div class="h-100 d-inline-block"></div>
+        <div class="card-footer text-center bg-transparent border-success">
+            Powered by <b> Prometeo Labs </b>
+        </div>
+    </div>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="js/libs/jquery.js"></script>
